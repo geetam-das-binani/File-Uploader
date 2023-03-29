@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #6990f2;
+}
+
+.wrapper {
+    background: #fff;
+    padding: 1.8rem;
+    width: 26rem;
+    margin: 1rem;
+
+    border-radius: 5px;
+}
+
+.wrapper>header {
+    color: #6990f2;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    text-align: center;
+
+}
+
+.wrapper form {
+    border: 2px dashed #6990f2;
+    height: 10.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.8rem 0;
+}
+
+form :where(i, p) {
+    color: #6990f2;
+
+}
+
+form i {
+    font-size: 3rem;
+}
+
+form p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+section .row {
+    background: #e9f0ff;
+    margin-bottom: .5rem;
+    list-style: none;
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+section .row i {
+    font-size: 1.8rem;
+    color: #6990f2;
+
+}
+
+.progress-area .row .content {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+section .details span {
+    font-size: .9rem;
+
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+
+}
+
+.progress-area .progress-bar {
+    height: .3rem;
+    background-color: #fff;
+    width: 100%;
+    margin-top: .4rem;
+    border-radius: 2.1rem;
+}
+
+.progress-bar .progress {
+    width:0%;
+    background: #6990f2;
+    height: 100%;
+    border-radius: 2px;
+}
+.uploaded-area{
+    max-height:15rem ;
+    overflow-y: scroll;
+    
+}
+.uploaded-area::-webkit-scrollbar{
+    width: 0%;
+}
+
+.uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.uploaded-area .row .details {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1rem;
+}
+
+.uploaded-area .details .size {
+    font-size: .9rem;
+    color: #6990f2;
+
+}
+
+.uploaded-area .bi {
+    color: #6990f2;
+    font-size: 1.5rem;
+}
