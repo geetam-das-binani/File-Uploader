@@ -28,11 +28,12 @@ let uploadfile = (name) => {
 
 
 
-    xhr.open('POST', 'php/upload.php') //sending post request to the specified URL/file 
+    xhr.open('POST', 'https://dummyjson.com/posts') //sending post request to the specified URL/file 
+
     xhr.upload.onprogress = ({ loaded, total }) => {
         let fileloaded = Math.floor((loaded / total) * 100)  //getting size in percentage 
         let filetotal = Math.floor(total / 1000)  // getting filesize in kb from bytes
-
+     
         // if filesize is less than 1024 add kb else convert to mb
         if (filetotal < 1024) {
             filesize = `${filetotal}KB`
@@ -51,7 +52,7 @@ let uploadfile = (name) => {
                     </div>
                     <div class="progress-bar">
                     
-                        <div class="progress" style="width:${fileloaded};">
+                        <div class="progress" style="width:${fileloaded}%;">
                             
                         </div>
                     </div>
